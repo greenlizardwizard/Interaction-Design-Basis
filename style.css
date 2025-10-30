@@ -1,0 +1,148 @@
+.hair {
+  position: absolute;
+  width: 30vw;
+  height: 33vw;
+  top: 14vw;
+  left: 37.6vw;
+  background-color: black;
+  clip-path: polygon(63% 20%, 55% 13%, 28% 16%, 13% 24%, 2% 35%, 0% 48%, 3% 56%, 7% 64%, 13% 54%, 23% 50%, 32% 38%, 29% 48%, 41% 37%, 39% 48%, 50% 42%, 57% 37%, 63% 47%, 69% 49%, 72% 55%, 70% 63%, 82% 49%, 80% 33%, 74% 23%);
+}
+
+.head {
+  position: absolute;
+  top: 20vw;
+  left: 40vw;
+  width: 20vw;
+  height: 30vw;
+  background-color: #c99175;
+  border-radius: 47% 48% 42% 42% / 32% 33% 45% 44%;
+}
+
+.eye {
+  position: absolute;
+  top: 12vw;
+  left: 1.5vw;
+  height: 6vw;
+  width: 6vw;
+  background-color: white;
+  clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
+}
+
+.eye2 {
+  position: absolute;
+  top: 12vw;
+  left: 12.3vw;
+  height: 6vw;
+  width: 6vw;
+  background-color: white;
+  transform: scaleX(-1);
+  clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
+}
+
+.eyeliner {
+  position: absolute;
+  top: 11.8vw;
+  left: 1.3vw;
+  height: 6.3vw;
+  width: 6.3vw;
+  background-color: black;
+  clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
+}
+
+.eyeliner2 {
+  position: absolute;
+  top: 11.8vw;
+  left: 12.2vw;
+  height: 6.3vw;
+  width: 6.3vw;
+  background-color: black;
+  transform: scaleX(-1);
+  clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
+}
+
+.pupil {
+  position: absolute;
+  top: 1vw;
+  left: 1.2vw;
+  width: 3vw;
+  height: 3vw;
+  background: #000000;
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(66, 33, 33, 1) 50%, rgba(89, 66, 66, 1) 100%);
+  clip-path: circle(50% at 50% 50%);
+}
+
+.brow {
+  position: absolute;
+  top: 9.5vw;
+  left: 1vw;
+  height: 7vw;
+  width: 7vw;
+  background-color: black;
+  clip-path: polygon(100% 35%, 72% 25%, 43% 21%, 13% 26%, 0 46%, 19% 43%, 42% 38%, 64% 39%, 82% 43%, 97% 50%);
+}
+
+.brow2 {
+  position: absolute;
+  top: 9.5vw;
+  left: 11.5vw;
+  height: 7vw;
+  width: 7vw;
+  transform: scaleX(-1);
+  background-color: black;
+  clip-path: polygon(100% 35%, 72% 25%, 43% 21%, 13% 26%, 0 46%, 19% 43%, 42% 38%, 64% 39%, 82% 43%, 97% 50%);
+}
+
+.nose {
+  position: absolute;
+  top: 15vw;
+  left: 6.5vw;
+  background-color: #ab6b5b;
+  width: 7vw;
+  height: 7vw;
+  clip-path: polygon(50% 0%, 30% 100%, 70% 100%);
+}
+
+.nose2 {
+  position: absolute;
+  top: 21.99vw;
+  left: 6.5vw;
+  background-color: #915c4e;
+  width: 7vw;
+  height: 0.5vw;
+  transform: scaleY(-1);
+  clip-path: polygon(50% 0%, 30% 100%, 70% 100%);
+}
+
+.toplip {
+  position: absolute;
+  top: 20;
+  left: 6.5;
+  width: 10;
+  height: 10;
+  background-color: #c45c67;
+  clip-path: polygon(48% 45%, 39% 40%, 12% 49%, 3% 51%, 48% 51%, 98% 50%, 85% 48%, 58% 40%);
+}
+
+.bottomlip {
+  position: absolute;
+  top: 20;
+  left: 6.5;
+  width: 10;
+  height: 10;
+  background-color: #c45c67;
+  clip-path: polygon(0% 45%, 100% 46%, 79% 61%, 47% 65%, 22% 61%);
+}
+
+ear {
+  position: absolute;
+  top: 20vw;
+  left: 30vw;
+  width: 20vw;
+  height: 20vw;
+  background-color: #c99175;
+  clip-path: ellipse(29% 40% at 50% 50%);
+}
+
+.auge:hover {
+  transition: 1000ms;
+}
