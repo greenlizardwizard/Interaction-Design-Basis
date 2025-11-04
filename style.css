@@ -115,20 +115,20 @@
 
 .toplip {
   position: absolute;
-  top: 20;
-  left: 6.5;
-  width: 10;
-  height: 10;
+  top: 22vw;
+  left: 6.5vw;
+  width: 7vw;
+  height: 6vw;
   background-color: #c45c67;
   clip-path: polygon(48% 45%, 39% 40%, 12% 49%, 3% 51%, 48% 51%, 98% 50%, 85% 48%, 58% 40%);
 }
 
 .bottomlip {
   position: absolute;
-  top: 20;
-  left: 6.5;
-  width: 10;
-  height: 10;
+  top: 22.1vw;
+  left: 6.5vw;
+  width: 7vw;
+  height: 6vw;
   background-color: #c45c67;
   clip-path: polygon(0% 45%, 100% 46%, 79% 61%, 47% 65%, 22% 61%);
 }
