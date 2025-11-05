@@ -1,3 +1,32 @@
+.fit.picture {
+}
+
+.cloud {
+  div {
+    position: absolute;
+    will-change: margin-top;
+
+    &:nth-child( 1 ) {
+      @include w-h ( 36vmin, 25vmin );
+      top: 35%;
+      left: 3%;
+      opacity: 0.6;
+      background:
+        radial-gradient( 1vmin 1vmin at 16% 53%, $w 4vmin, $t 4.4vmin ),
+        radial-gradient( 0.8vmin 1vmin at 33% 51%, $w 6vmin, $t 6.4vmin ),
+        radial-gradient( 1.5vmin 1vmin at 57% 30%, $w 7vmin, $t 7.5vmin ),
+        radial-gradient( 1.2vmin 1vmin at 79% 36%, $w 3vmin, $t 3.4vmin ),
+        radial-gradient( 2vmin 1.5vmin at 84% 55%, $w 5vmin, $t 5.5vmin ),
+        radial-gradient( 2vmin 1.5vmin at 78% 72%, $w 4vmin, $t 4.5vmin ),
+        radial-gradient( 2vmin 1.5vmin at 55% 72%, $w 5.5vmin, $t 6vmin ),
+        radial-gradient( 2vmin 1.5vmin at 35% 80%, $w 2.5vmin, $t 3vmin ),
+        radial-gradient( 2vmin 1.5vmin at 16% 70%, $w 4.5vmin, $t 5vmin ),
+        radial-gradient( 2vmin 0.9vmin at 50% 55%, $w 14.5vmin, $t 15vmin );
+      animation: moving-cloud 30s infinite linear;
+    }
+  }
+}
+
 .hair {
   position: absolute;
   width: 30vw;
@@ -119,7 +148,7 @@
 .nose {
   position: absolute;
   top: 15vw;
-  left: 6.5vw;
+  left: 6.4vw;
   background-color: #ab6b5b;
   box-shadow: 1vw 1vw 2vw #915c4e;
   width: 7vw;
@@ -144,28 +173,53 @@
   left: 6.5vw;
   width: 7vw;
   height: 6vw;
+  box-shadow: inset 0vw -2.5vw 0.5vw #A03232;
   background-color: #c45c67;
   clip-path: polygon(48% 45%, 39% 40%, 12% 49%, 3% 51%, 48% 51%, 98% 50%, 85% 48%, 58% 40%);
 }
 
 .bottomlip {
   position: absolute;
-  top: 22.1vw;
+  top: 22.3vw;
   left: 6.5vw;
   width: 7vw;
   height: 6vw;
+  box-shadow: inset 0vw -2.5vw 0.5vw #A03232;
   background-color: #c45c67;
   clip-path: polygon(0% 45%, 100% 46%, 79% 61%, 47% 65%, 22% 61%);
 }
 
-ear {
+.ear {
   position: absolute;
-  top: 20vw;
-  left: 30vw;
-  width: 20vw;
-  height: 20vw;
+  top: 32vw;
+  left: 35vw;
+  width: 10vw;
+  height: 10vw;
+  box-shadow: inset -1vw -1vw 3vw #915c4e;
   background-color: #c99175;
   clip-path: ellipse(29% 40% at 50% 50%);
+}
+
+.ear2 {
+  position: absolute;
+  top: 32vw;
+  left: 55vw;
+  width: 10vw;
+  height: 10vw;
+  box-shadow: inset -2vw -1vw 3vw #915c4e;
+  background-color: #c99175;
+  clip-path: ellipse(29% 40% at 50% 50%);
+}
+
+.lachfalte {
+  position: absolute;
+  top: 30vw;
+  left: 10vw;
+  width: 50vw;
+  height: 50vw;
+  box-shadow: inset -2vw -1vw 3vw #915c4e;
+  background-color: black;
+  clip-path: polygon(97% 23%, 67% 31%, 50% 47%, 33% 76%, 31% 92%, 27% 75%, 21% 54%, 30% 33%, 50% 17%, 79% 16%);
 }
 
 .auge:hover {
