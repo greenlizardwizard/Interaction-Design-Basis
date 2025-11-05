@@ -1,6 +1,3 @@
-.fit.picture {
-}
-
 
 .hair {
   position: absolute;
@@ -64,6 +61,29 @@
   height: 6.3vw;
   width: 6.3vw;
   background-color: black;
+  transform: scaleX(-1);
+  clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
+}
+
+.eyeshadow {
+  position: absolute;
+  top: 10.5vw;
+  left: 0.3vw;
+  height: 8vw;
+  width: 7vw;
+  box-shadow: inset 1vw 3vw 2vw #c99175;
+  background-color: #915c4e;
+  clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
+}
+
+.eyeshadow2 {
+  position: absolute;
+  top: 10.5vw;
+  left: 12.5vw;
+  height: 8vw;
+  width: 7vw;
+  box-shadow: inset 1vw 3vw 2vw #c99175;
+  background-color: #915c4e;
   transform: scaleX(-1);
   clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
 }
@@ -186,17 +206,73 @@
   clip-path: ellipse(29% 40% at 50% 50%);
 }
 
+.augenfalte {  
+  position: absolute;
+  top: 15vw;
+  left: 1.5vw;
+  width: 6vw;
+  height: 4vw;
+  box-shadow: inset 2vw 3vw 2vw #c99175;
+  background-color: #915c4e;
+  clip-path: polygon(99% 32%, 90% 47%, 72% 63%, 41% 71%, 20% 66%, 5% 54%, 0% 37%, 12% 41%, 34% 51%, 55% 49%, 78% 46%, 89% 41%);
+}
+
+.augenfalte2 {  
+  position: absolute;
+  top: 15vw;
+  left: 11.9vw;
+  width: 6vw;
+  height: 4vw;
+  box-shadow: inset 2vw 3vw 2vw #c99175;
+  background-color: #915c4e;
+  transform: scaleX(-1);
+  clip-path: polygon(99% 32%, 90% 47%, 72% 63%, 41% 71%, 20% 66%, 5% 54%, 0% 37%, 12% 41%, 34% 51%, 55% 49%, 78% 46%, 89% 41%);
+}
+
 .lachfalte {
   position: absolute;
-  top: 30vw;
-  left: 10vw;
-  width: 50vw;
-  height: 50vw;
-  box-shadow: inset -2vw -1vw 3vw #915c4e;
-  background-color: black;
+  top: 22.5vw;
+  left: 4.7vw;
+  width: 4vw;
+  height: 4vw;
+  box-shadow: inset 2vw 2vw 3.5vw #c99175;
+  background-color: #915c4e;
   clip-path: polygon(97% 23%, 67% 31%, 50% 47%, 33% 76%, 31% 92%, 27% 75%, 21% 54%, 30% 33%, 50% 17%, 79% 16%);
 }
 
-.auge:hover {
+.lachfalte2 {
+  position: absolute;
+  top: 22.5vw;
+  left: 11.3vw;
+  width: 4vw;
+  height: 4vw;
+  transform: scaleX(-1);
+  box-shadow: inset 2vw 2vw 3.5vw #c99175;
+  background-color: #915c4e;
+  clip-path: polygon(97% 23%, 67% 31%, 50% 47%, 33% 76%, 31% 92%, 27% 75%, 21% 54%, 30% 33%, 50% 17%, 79% 16%);
+}
+
+.eye:hover {
+  position: absolute;
+  top: 15vw;
+  left: 1.5vw;
+  height: 0vw;
+  width: 6vw;
+  box-shadow: inset 0vw 1vw 1vw lightblue;
+  background-color: white;
+  clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
   transition: 1000ms;
 }
+
+.eye2:hover {
+  position: absolute;
+  top: 15vw;
+  left: 12.3vw;
+  height: 0vw;
+  width: 6vw;
+  box-shadow: inset 0vw 1vw 1vw lightblue;
+  background-color: white;
+  clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
+  transition: 1000ms;
+}
+
