@@ -1,31 +1,6 @@
 .fit.picture {
 }
 
-.cloud {
-  div {
-    position: absolute;
-    will-change: margin-top;
-
-    &:nth-child( 1 ) {
-      @include w-h ( 36vmin, 25vmin );
-      top: 35%;
-      left: 3%;
-      opacity: 0.6;
-      background:
-        radial-gradient( 1vmin 1vmin at 16% 53%, $w 4vmin, $t 4.4vmin ),
-        radial-gradient( 0.8vmin 1vmin at 33% 51%, $w 6vmin, $t 6.4vmin ),
-        radial-gradient( 1.5vmin 1vmin at 57% 30%, $w 7vmin, $t 7.5vmin ),
-        radial-gradient( 1.2vmin 1vmin at 79% 36%, $w 3vmin, $t 3.4vmin ),
-        radial-gradient( 2vmin 1.5vmin at 84% 55%, $w 5vmin, $t 5.5vmin ),
-        radial-gradient( 2vmin 1.5vmin at 78% 72%, $w 4vmin, $t 4.5vmin ),
-        radial-gradient( 2vmin 1.5vmin at 55% 72%, $w 5.5vmin, $t 6vmin ),
-        radial-gradient( 2vmin 1.5vmin at 35% 80%, $w 2.5vmin, $t 3vmin ),
-        radial-gradient( 2vmin 1.5vmin at 16% 70%, $w 4.5vmin, $t 5vmin ),
-        radial-gradient( 2vmin 0.9vmin at 50% 55%, $w 14.5vmin, $t 15vmin );
-      animation: moving-cloud 30s infinite linear;
-    }
-  }
-}
 
 .hair {
   position: absolute;
