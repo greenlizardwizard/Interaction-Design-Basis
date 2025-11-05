@@ -8,6 +8,93 @@
   background-color: yellow;
   aspect-ratio: 1;
   clip-path: polygon(100% 50%,59.66% 52.59%,93.3% 75%,57.07% 57.07%,75% 93.3%,52.59% 59.66%,50% 100%,47.41% 59.66%,25% 93.3%,42.93% 57.07%,6.7% 75%,40.34% 52.59%,0% 50%,40.34% 47.41%,6.7% 25%,42.93% 42.93%,25% 6.7%,47.41% 40.34%,50% 0%,52.59% 40.34%,75% 6.7%,57.07% 42.93%,93.3% 25%,59.66% 47.41%);
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+  }
+   
+}
+
+.cloud {
+    position: absolute;
+    top: 5vw;
+    height: 10vw;
+    aspect-ratio: 2;
+    --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    mask: var(--g) 100% 100%/30% 60%,var(--g) 70% 0/50% 100%,var(--g) 0 100%/36% 68%,var(--g) 27% 18%/26% 40%,linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+    background: white;
+    opacity: 75%;
+    animation-name: moving;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 20vw;
+    height: 180px;
+    aspect-ratio: 2;
+    --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    mask: var(--g) 100% 100%/30% 60%,var(--g) 70% 0/50% 100%,var(--g) 0 100%/36% 68%,var(--g) 27% 18%/26% 40%,linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+    background: white;
+    opacity: 75%;
+    transform: scaleX(-1);
+    animation-name: moving2;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.cloud3 {
+    position: absolute;
+    top: 50vw;
+    height: 200px;
+    aspect-ratio: 2;
+    --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    mask: var(--g) 100% 100%/30% 60%,var(--g) 70% 0/50% 100%,var(--g) 0 100%/36% 68%,var(--g) 27% 18%/26% 40%,linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+    background: white;
+    opacity: 75%;
+    animation-name: moving3;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes moving {
+  from {
+    left: -10vw;
+  }
+  to {
+    left: 90vw;
+  }
+}
+
+@keyframes moving2 {
+  from {
+    left: 90vw;
+  }
+  to {
+    left: -20vw;
+  }
+}
+
+@keyframes moving3 {
+  from {
+    left: -30vw;
+  }
+  to {
+    left: 90vw;
+  }
 }
 
 .hair {
@@ -34,8 +121,8 @@
 
 .eye {
   position: absolute;
-  top: 12vw;
-  left: 1.5vw;
+  top: 0.2vw;
+  left: 0.2vw;
   height: 6vw;
   width: 6vw;
   box-shadow: inset 0vw 1vw 1vw lightblue;
@@ -45,13 +132,12 @@
 
 .eye2 {
   position: absolute;
-  top: 12vw;
-  left: 12.3vw;
+  top: 0.2vw;
+  left: 0.2vw;
   height: 6vw;
   width: 6vw;
   box-shadow: inset 0vw 1vw 1vw lightblue;
   background-color: white;
-  transform: scaleX(-1);
   clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
 }
 
@@ -102,7 +188,7 @@
 .pupil {
   position: absolute;
   top: 1vw;
-  left: 1.2vw;
+  left: 1.4vw;
   width: 3vw;
   height: 3vw;
   background: #000000;
@@ -116,6 +202,17 @@
   left: 1.5vw;
   width: 0.5vw;
   height: 1vw;
+  background-color: white;
+  clip-path: circle();
+}
+
+.reflection2 {
+  position: absolute;
+  top: 1.9vw;
+  left: 1.5vw;
+  width: 0.5vw;
+  height: 1vw;
+  transform: scaleX(-1);
   background-color: white;
   clip-path: circle();
 }
@@ -179,7 +276,7 @@
   left: 6.5vw;
   width: 7vw;
   height: 6vw;
-  box-shadow: inset 0vw -2.5vw 0.5vw #A03232;
+  box-shadow: inset 0vw 3vw 1vw #A03232;
   background-color: #c45c67;
   clip-path: polygon(48% 45%, 39% 40%, 12% 49%, 3% 51%, 48% 51%, 98% 50%, 85% 48%, 58% 40%);
 }
@@ -263,39 +360,65 @@
   clip-path: polygon(97% 23%, 67% 31%, 50% 47%, 33% 76%, 31% 92%, 27% 75%, 21% 54%, 30% 33%, 50% 17%, 79% 16%);
 }
 
-.eye:hover {
+.stache {
+  position: absolute;
+  top: 21vw;
+  left: 5vw;
+  width: 5vw;
+  height: 6vw;
+  background-color: black;
+  opacity: 50%;
+  box-shadow: inset -0.1vw -3vw 3vw #c99175;
+  clip-path: polygon(99% 34%, 87% 28%, 61% 33%, 18% 45%, 4% 55%, 1% 64%, 5% 71%, 17% 66%, 51% 57%, 80% 54%, 92% 56%, 99% 60%);
+}
+
+.stache2 {
+  position: absolute;
+  top: 21vw;
+  left: 10vw;
+  width: 5vw;
+  height: 6vw;
+  transform: scaleX(-1);
+  background-color: black;
+  opacity: 50%;
+  box-shadow: inset -0.1vw -3vw 3vw #c99175;
+  clip-path: polygon(99% 34%, 87% 28%, 61% 33%, 18% 45%, 4% 55%, 1% 64%, 5% 71%, 17% 66%, 51% 57%, 80% 54%, 92% 56%, 99% 60%);
+}
+
+.beard {
+  position: absolute;
+  top: 21vw;
+  left: 5vw;
+  width: 5vw;
+  height: 6vw;
+  background-color: black;
+  opacity: 50%;
+  box-shadow: inset -0.1vw -3vw 3vw #c99175;
+  clip-path: polygon(99% 34%, 87% 28%, 61% 33%, 18% 45%, 4% 55%, 1% 64%, 5% 71%, 17% 66%, 51% 57%, 80% 54%, 92% 56%, 99% 60%);
+}
+
+.eyeliner:hover {
   position: absolute;
   top: 15vw;
   left: 1.5vw;
   height: 0vw;
   width: 6vw;
-  box-shadow: inset 0vw 1vw 1vw lightblue;
-  background-color: white;
+  background-color: black;
   clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
-  transition: 1000ms;
+  transition: 1200ms;
 }
 
-.eye2:hover {
+.eyeliner2:hover {
   position: absolute;
   top: 15vw;
   left: 12.3vw;
   height: 0vw;
   width: 6vw;
-  box-shadow: inset 0vw 1vw 1vw lightblue;
-  background-color: white;
+  background-color: black;
   clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
   transition: 1000ms;
 }
 
-.starburst:hover {
-  position: absolute;
-  top: 3vw;
-  left: 20vw;
-  width: 60vw;
-  height: 60vw;
-  background-color: yellow;
-  aspect-ratio: 1;
-  clip-path: polygon(93.3% 75%,57.07% 57.07%,75% 93.3%,52.59% 59.66%,50% 100%,47.41% 59.66%,25% 93.3%,42.93% 57.07%,6.7% 75%,40.34% 52.59%,0% 50%,40.34% 47.41%,6.7% 25%,42.93% 42.93%,25% 6.7%,47.41% 40.34%,50% 0%,52.59% 40.34%,75% 6.7%,57.07% 42.93%,93.3% 25%,59.66% 47.41%,100% 50%,59.66% 52.59%);
-  transition: 10s;
-}
+
+
 
