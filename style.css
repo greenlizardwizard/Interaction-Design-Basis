@@ -1,4 +1,15 @@
 
+.starburst {
+  position: absolute;
+  top: 3vw;
+  left: 20vw;
+  width: 60vw;
+  height: 60vw;
+  background-color: yellow;
+  aspect-ratio: 1;
+  clip-path: polygon(100% 50%,59.66% 52.59%,93.3% 75%,57.07% 57.07%,75% 93.3%,52.59% 59.66%,50% 100%,47.41% 59.66%,25% 93.3%,42.93% 57.07%,6.7% 75%,40.34% 52.59%,0% 50%,40.34% 47.41%,6.7% 25%,42.93% 42.93%,25% 6.7%,47.41% 40.34%,50% 0%,52.59% 40.34%,75% 6.7%,57.07% 42.93%,93.3% 25%,59.66% 47.41%);
+}
+
 .hair {
   position: absolute;
   width: 30vw;
@@ -208,7 +219,7 @@
 
 .augenfalte {  
   position: absolute;
-  top: 15vw;
+  top: 14.5vw;
   left: 1.5vw;
   width: 6vw;
   height: 4vw;
@@ -219,7 +230,7 @@
 
 .augenfalte2 {  
   position: absolute;
-  top: 15vw;
+  top: 14.5vw;
   left: 11.9vw;
   width: 6vw;
   height: 4vw;
@@ -274,5 +285,17 @@
   background-color: white;
   clip-path: polygon(51% 26%, 90% 46%, 98% 54%, 47% 72%, 10% 59%, 0 40%);
   transition: 1000ms;
+}
+
+.starburst:hover {
+  position: absolute;
+  top: 3vw;
+  left: 20vw;
+  width: 60vw;
+  height: 60vw;
+  background-color: yellow;
+  aspect-ratio: 1;
+  clip-path: polygon(93.3% 75%,57.07% 57.07%,75% 93.3%,52.59% 59.66%,50% 100%,47.41% 59.66%,25% 93.3%,42.93% 57.07%,6.7% 75%,40.34% 52.59%,0% 50%,40.34% 47.41%,6.7% 25%,42.93% 42.93%,25% 6.7%,47.41% 40.34%,50% 0%,52.59% 40.34%,75% 6.7%,57.07% 42.93%,93.3% 25%,59.66% 47.41%,100% 50%,59.66% 52.59%);
+  transition: 10s;
 }
 
