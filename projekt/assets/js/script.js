@@ -17,5 +17,5 @@ window.addEventListener('scroll', () => {
         document.body.classList.remove('scroll-ende');
         audio2.pause();
     }
-    
+
 });

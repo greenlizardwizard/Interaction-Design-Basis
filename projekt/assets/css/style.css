@@ -178,15 +178,32 @@ body.scroll-ende {
     width: 25vh;
     height: 8vh;
     background-color: rgb(207, 200, 192);
-    opacity: 20%;
+    opacity: 100%;
     border-radius: 50%;
     box-shadow: inset -1vw -1vw 2vw rgb(127, 120, 112);
+    animation-name: braten;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
     }
     .eigelb {
         opacity: 80%;
         top: 1.5vh;
+        animation-name: braten2;
+        animation-duration: 10s;
     }
     .ei {
         opacity: 0%;
 }
+}
+
+@keyframes braten {
+  from {
+    opacity: 20%;
+  }
+}
+
+@keyframes braten2 {
+  from {
+    opacity: 80%;
+  }
 }
