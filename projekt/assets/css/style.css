@@ -12,6 +12,7 @@
     border-radius: 70% 60% 60% 70%;
     box-shadow: inset -1vw -1vw 2vw rgba(180, 147, 133, 0.489);
     transition: 500ms;
+    transition-delay: 20ms;
 }
 
 .ei1 {
@@ -37,7 +38,7 @@
     right: 0;
     left: 0;
     margin: auto;
-    margin-bottom: 47.5vh;
+    margin-bottom: 45vh;
     width: 31vh;
     height: 9vh;
     background-color: rgb(29, 29, 29);
@@ -48,7 +49,7 @@
 .eiweiß {
     position: absolute;
     top: 0vh;
-    bottom: 0vh;
+    bottom: 20vh;
     left: 0vh;
     right: 0vh;
     margin: auto;
@@ -88,7 +89,7 @@
 
 .eigelb{
     position: absolute;
-    top: 0vh;
+    top: -2.5vh;
     left: 11.5vh;
     width: 7vh;
     height: 3vh;

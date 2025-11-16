@@ -9,11 +9,12 @@ window.addEventListener('scroll', () => {
     if (hasReachedEnd) {
         document.body.classList.add('scroll-ende');
         audio1.play();
-        
+        audio2.play();
     }
     // andernfalls wird die Klasse (wieder) entfernt
     else {
         document.body.classList.remove('scroll-ende');
+        audio2.pause();
     }
     
 });
