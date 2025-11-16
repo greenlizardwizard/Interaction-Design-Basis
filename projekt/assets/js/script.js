@@ -8,9 +8,12 @@ window.addEventListener('scroll', () => {
     // wenn das Ende erreicht ist, wird die Klasse 'scroll-ende' zum Body hinzugefügt
     if (hasReachedEnd) {
         document.body.classList.add('scroll-ende');
+        audio1.play();
+        
     }
     // andernfalls wird die Klasse (wieder) entfernt
     else {
         document.body.classList.remove('scroll-ende');
     }
+    
 });

@@ -48,11 +48,14 @@
 .eiweiß {
     position: absolute;
     top: 0vh;
-    left: 2.5vh;
-    width: 25vh;
-    height: 8vh;
+    bottom: 0vh;
+    left: 0vh;
+    right: 0vh;
+    margin: auto;
+    width: 0vh;
+    height: 0vh;
     background-color: rgb(207, 200, 192);
-    opacity: 0;
+    opacity: 0%;
     border-radius: 50%;
     box-shadow: inset -1vw -1vw 2vw rgb(127, 120, 112);
     transition: 500ms;
@@ -85,7 +88,7 @@
 
 .eigelb{
     position: absolute;
-    top: 1.5vh;
+    top: 0vh;
     left: 11.5vh;
     width: 7vh;
     height: 3vh;
@@ -125,7 +128,7 @@
     position: absolute;
     width: 100vw;
     height: 200vh;
-    background-color: grey;
+    background-color: white;
 }
 
 .tile {
@@ -164,10 +167,23 @@
 
 body.scroll-ende {
     .eiweiß {
-        opacity: 20%;
+    position: absolute;
+    top: 0vh;
+    bottom: 0vh;
+    left: 0vh;
+    right: 0vh;
+    margin-left: 2.5vh;
+    margin:auto;
+    width: 25vh;
+    height: 8vh;
+    background-color: rgb(207, 200, 192);
+    opacity: 20%;
+    border-radius: 50%;
+    box-shadow: inset -1vw -1vw 2vw rgb(127, 120, 112);
     }
     .eigelb {
         opacity: 80%;
+        top: 1.5vh;
     }
     .ei {
         opacity: 0%;
