@@ -11,6 +11,8 @@ window.addEventListener('scroll', () => {
         audio1.play();
         audio2.play();
         audio2.loop = true;
+        let audio = document.getElementById("audio2");
+        audio.volume = 0.2;
     }
     // andernfalls wird die Klasse (wieder) entfernt
     else {

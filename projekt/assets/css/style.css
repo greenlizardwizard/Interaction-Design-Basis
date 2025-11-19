@@ -145,17 +145,22 @@
     position: absolute;
     width: 100vw;
     height: 200vh;
-    background-color: white;
+    background-color: rgb(191, 191, 191);
 }
 
 .tile {
-    position: absolute;
-    height: 10vh;
-    width: 10vh;
+    position: relative;
+    margin: 0.5vh;
+    height: 19vh;
+    width: 19vw;
     background-color: whitesmoke;
     box-shadow: inset -1vh -1vh 1vh lightgray;
     border-radius: 2%;
     ;
+}
+
+.container {
+    display: flex;
 }
 
 .counter {
@@ -163,7 +168,7 @@
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 55vh;
+    height: 56.5vh;
     background-color: rgb(194, 151, 113);
 }
 
