@@ -1,0 +1,68 @@
+.body {
+    background-color: rgb(195, 212, 238);
+}
+
+.h1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90vw;
+    height: 10vw;
+    text-align: center;
+    font-size: 10vw;
+    font-family: helvetica;
+    font-style: italic;
+    color: rgb(178, 93, 3);
+}
+
+.ei {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50vw;
+    height: 37.5vw;
+    background-color: beige;
+    rotate: 90deg;
+    border-radius: 70% 60% 60% 70%;
+    box-shadow: inset -5vw 5vw 10vw rgba(180, 147, 133, 0.815);
+    transition: 500ms;
+    transition-delay: 20ms;
+    animation-name: rotate;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+.starbust {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vw;
+  background-color: yellow;
+  clip-path: polygon(100% 50%,59.66% 52.59%,93.3% 75%,57.07% 57.07%,75% 93.3%,52.59% 59.66%,50% 100%,47.41% 59.66%,25% 93.3%,42.93% 57.07%,6.7% 75%,40.34% 52.59%,0% 50%,40.34% 47.41%,6.7% 25%,42.93% 42.93%,25% 6.7%,47.41% 40.34%,50% 0%,52.59% 40.34%,75% 6.7%,57.07% 42.93%,93.3% 25%,59.66% 47.41%);
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+  }
+   
+}

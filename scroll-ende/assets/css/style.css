@@ -1,0 +1,48 @@
+.bg {
+    position: absolute;
+    height: 300vh;
+}
+
+.pfanne {
+    position: absolute;
+    bottom: 50vh;
+    left: 40vw;
+    width: 10vw;
+    height: 10vw;
+    background-color: lime;
+}
+
+/* body bekommt dynamisch (Code in js/script.js) die Klasse scroll-ende
+   hinzugefügt, sobald bis zum Ende gescrollt wurde.
+   
+   Übrigens: Im CSS kann ebenfalls verschachtelt werden, um so die
+   Struktur im HTML abzubilden
+
+    <body class="scroll-ende">
+        <div class="bg">
+            <div class="pfanne"></div>
+        </div>
+    </body>
+
+    1:1 wäre das:
+
+    body.scroll-ende {
+        .bg {
+            .pfanne {
+                background-color: red;
+            }
+        }
+    }        
+
+    Allerdings kann .bg auch weggelassen werden. Alles, was in diesem Fall zählt, ist,
+    dass .pfanne innerhalb von body.scroll-ende ist (dass oder ob es
+    auch innerhalb von .bg ist, ist egal)
+   */
+body.scroll-ende {
+
+    /* diese Regeln für .pfanne gelten nur, wenn der body
+    die Klasse scroll-ende bekommen hat */
+    .pfanne {
+        background-color: red;
+    }
+}
