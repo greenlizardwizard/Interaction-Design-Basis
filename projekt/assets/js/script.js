@@ -17,7 +17,6 @@ window.addEventListener('scroll', () => {
     // andernfalls wird die Klasse (wieder) entfernt
     else {
         document.body.classList.remove('scroll-ende');
-        audio1.pause();
         audio2.pause();
     }
 
