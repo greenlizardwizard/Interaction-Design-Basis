@@ -39,7 +39,7 @@ body {
    animation-timing-function: linear;
 }
 
-.starbust {
+.starburst {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -68,6 +68,9 @@ body {
 }
 
 body.click {
+
+overflow-x: hidden; 
+
 .ei {
     position: fixed;
     top: 0;
@@ -97,7 +100,7 @@ body.click {
     height: 7.5vh;
     rotate: 0deg;
     border-radius: 70% 60% 60% 70%;
-    box-shadow: 2vh 2vh 1vh rgba(0, 0, 0, 0.315);
+    box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.315);
     transition: 500ms;
     transition-delay: 20ms;
     animation: none;
@@ -223,7 +226,7 @@ body.click {
     width: 32vh;
     height: 9vh;
     border-radius: 50%;
-    box-shadow: 2vh 2vh 1vh rgba(0, 0, 0, 0.315);
+    box-shadow: 2vh 3vh 1vh rgba(0, 0, 0, 0.315);
 }
 
 .pfannevorne {

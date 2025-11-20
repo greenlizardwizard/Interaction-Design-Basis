@@ -1,5 +1,9 @@
+
 window.addEventListener('click', () => {
+
     onclick = document.body.classList.add('click')
+    audio3.play();
+
 })
 
 
@@ -19,11 +23,13 @@ window.addEventListener('scroll', () => {
         audio2.loop = true;
         let audio = document.getElementById("audio2");
         audio.volume = 0.4;
+        
     }
     // andernfalls wird die Klasse (wieder) entfernt
     else {
         document.body.classList.remove('scroll-ende');
         audio2.pause();
+        audio1.pause();
     }
 
 });
