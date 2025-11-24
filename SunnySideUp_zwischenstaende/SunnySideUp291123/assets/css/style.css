@@ -1,0 +1,406 @@
+body {
+    background-color: rgb(195, 212, 238);
+    overflow-y: hidden;
+}
+
+.h1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90vw;
+    height: 10vw;
+    text-align: center;
+    font-size: 10vw;
+    font-family: helvetica;
+    font-style: italic;
+    color: rgb(178, 93, 3);
+}
+
+.ei {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50vw;
+    height: 37.5vw;
+    background-color: beige;
+    rotate: 90deg;
+    border-radius: 70% 60% 60% 70%;
+    box-shadow: inset -5vw 5vw 10vw rgba(180, 147, 133, 0.815);
+    cursor: pointer;
+    animation-name: rotate;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+.eischatten {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 45vh;
+    width: 10vw;
+    height: 7.5vw;
+    rotate: 0deg;
+    border-radius: 70% 60% 60% 70%;
+    box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.315);
+    transition: 500ms;
+    transition-delay: 20ms;
+    animation: none;
+}
+
+.eigelb {
+    opacity: 0%;
+}
+
+.eigelb1 {
+    opacity: 0%;
+}
+
+.starburst {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100vw;
+  height: 100vw;
+  background-color: yellow;
+  clip-path: polygon(100% 50%,59.66% 52.59%,93.3% 75%,57.07% 57.07%,75% 93.3%,52.59% 59.66%,50% 100%,47.41% 59.66%,25% 93.3%,42.93% 57.07%,6.7% 75%,40.34% 52.59%,0% 50%,40.34% 47.41%,6.7% 25%,42.93% 42.93%,25% 6.7%,47.41% 40.34%,50% 0%,52.59% 40.34%,75% 6.7%,57.07% 42.93%,93.3% 25%,59.66% 47.41%);
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+  }
+   
+}
+
+body.click {
+
+overflow-x: hidden;
+overflow-y: auto;
+
+
+.ei {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 45vh;
+    width: 14vw;
+    height: 10vw;
+    background-color: beige;
+    border-radius: 70% 60% 60% 70%;
+    box-shadow: inset -1vw -1vw 2vw rgba(180, 147, 133, 0.815);
+    cursor: all-scroll; 
+    transition: 500ms;
+    transition-delay: 20ms;
+    rotate: 0deg;
+    animation: none;
+}
+
+.eischatten {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 45vh;
+    width: 14vw;
+    height: 10vw;
+    rotate: 0deg;
+    border-radius: 70% 60% 60% 70%;
+    box-shadow: 1vw 1vw 1vw rgba(0, 0, 0, 0.315);
+    transition: 500ms;
+    transition-delay: 20ms;
+    animation: none;
+}
+
+.pfannehinten {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 100vh;
+    width: 46.5vw;
+    height: 13.5vw;
+    background-color: rgb(29, 29, 29);
+    opacity: 100%;
+    border-radius: 100% 100% 50% 50%;
+    box-shadow: inset -2vw 1vw 2vw rgb(72, 72, 72);
+    cursor: all-scroll;
+}
+
+.eiweiß {
+    position: absolute;
+    top: 0vw;
+    bottom: 20vw;
+    left: 0vw;
+    right: 0vw;
+    margin: auto;
+    width: 0vw;
+    height: 0vw;
+    background-color: rgb(207, 200, 192);
+    opacity: 0%;
+    border-radius: 50%;
+    box-shadow: inset -2vw -2vw 3vw rgb(127, 120, 112);
+    transition: 500ms;
+}
+
+.eiweiß1 {
+    position: absolute;
+    top: 0vw;
+    bottom: 20vw;
+    left: 0vw;
+    right: 0vw;
+    margin: auto;
+    width: 0vw;
+    height: 0vw;
+    background-color: rgb(35, 30, 25);
+    opacity: 0%;
+    border-radius: 50%;
+    box-shadow: inset -2vw -2vw 3vw rgb(0, 0, 0);
+    transition: 500ms;
+}
+
+.eigelb{
+    position: absolute;
+    top: -3.75vw;
+    left: 17.25vw;
+    width: 10.5vw;
+    height: 4.5vw;
+    background-color: orange;
+    opacity: 0%;
+    border-radius: 50% 50% 40% 40%;
+    box-shadow: inset -0.5vw -0.5vw 1vw rgb(178, 93, 3);
+    transition: 500ms;
+}
+
+.eigelb1{
+    position: absolute;
+    top: -3.75vw;
+    left: 17.25vw;
+    width: 10.5vw;
+    height: 4.5vw;
+    background-color: rgb(20, 18, 14);
+    opacity: 0%;
+    border-radius: 50% 50% 40% 40%;
+    box-shadow: inset -0.5vw -0.5vw 1vw rgb(0, 0, 0);
+    transition: 500ms;
+}
+
+.pfannenboden {
+    position: absolute;
+    bottom: -3.75vw;
+    left: 0.75vw;
+    width: 45vw;
+    height: 13.5vw;
+    background-color: grey;
+    border-radius: 50%;
+    box-shadow: inset 2vw 1vw 2vw rgb(63, 63, 63);
+}
+
+.pfannenbodenschatten {
+    position: absolute;
+    bottom: -2.25vw;
+    left: -2.25vw;
+    width: 46vw;
+    height: 13.5vw;
+    border-radius: 50%;
+    box-shadow: 5vw 4vw 2vw rgba(0, 0, 0, 0.315);
+}
+
+.pfannevorne {
+    position: absolute;
+    bottom: -3.9vw;
+    left: 0vw;
+    width: 46.5vw;
+    height: 10.75vw;
+    background-color: rgb(72, 72,72);
+    --c: 60;
+    mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))),#0000 calc(100% - 1px),#000);
+    clip-path: ellipse(calc(var(--c)*1%) 100% at top);
+    border-radius: 0% 0% 150% 150%;
+    box-shadow: inset -25vw -2vw 5vw rgb(29, 29, 29);
+}
+
+.griff {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-bottom: 3vw;
+    margin-left: 46.5vw;
+    height: 3.75vw;
+    width: 22vw;
+    background-color: rgb(72, 72, 72);
+    border-radius: 0% 30% 30% 0%;
+    box-shadow: inset 1vw -1.5vw 1vw rgb(29, 29, 29);
+}
+
+.griffschatten {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-bottom: 3.1vw;
+    margin-left: 44vw;
+    height: 3.75vw;
+    width: 22vw;
+    border-radius: 0% 30% 30% 0%;
+    box-shadow: 2vw 2vw 1vw rgba(0, 0, 0, 0.315);
+}
+
+.bg {
+    position: absolute;
+    width: 100vw;
+    height: 155vh;
+    background-color: rgb(195, 212, 238);
+}
+
+.tile {
+    position: relative;
+    margin: 0.5vh;
+    height: 19vh;
+    width: 19vw;
+    background-color: rgb(114, 139, 191);
+    box-shadow: inset -1vh -1vh 2vh rgb(88, 101, 145);
+    border-radius: 2%;
+    ;
+}
+
+.container {
+    display: flex;
+}
+
+.counter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 56.5vh;
+    background-color: rgb(194, 151, 113);
+}
+
+.stove {
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50vh;
+    height: 10vh;
+    --p: 5vh;
+    background-color: #000;
+    clip-path: polygon(var(--p) 0,calc(100% - var(--p)) 0,100% 100%,0 100%);
+    border-radius: 2%;
+
+}
+
+
+}
+body.scroll-ende {
+    .eiweiß {
+    top: 0vw;
+    bottom: 0vw;
+    left: 0vw;
+    right: 0vw;
+    margin-left: 3.75vw;
+    margin:auto;
+    width: 37.5vw;
+    height: 12vw;
+    background-color: rgb(207, 200, 192);
+    opacity: 100%;
+    border-radius: 50%;
+    box-shadow: inset -1vw -1vw 2vw rgb(127, 120, 112);
+    animation-name: braten;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    }
+    .eiweiß1 {
+    top: 0vw;
+    bottom: 0vw;
+    left: 0vw;
+    right: 0vw;
+    margin-left: 3.75vw;
+    margin:auto;
+    width: 37.5vw;
+    height: 12vw;
+    opacity: 0%;
+    border-radius: 50%;
+    animation-name: verbrannt;
+    animation-duration: 10s;
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+    .eigelb {
+        opacity: 80%;
+        top: 2.25vw;
+        animation-name: braten2;
+        animation-duration: 10s;
+        animation-iteration-count: 1;
+    }
+
+    .eigelb1 {
+        opacity: 0%;
+        top: 2.25vw;
+        animation-name: verbrannt;
+        animation-duration: 10s;
+        animation-delay: 10s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .eischatten {
+        opacity: 0%;
+    }
+    .ei {
+        opacity: 0%;
+        
+}
+}
+
+@keyframes braten {
+  from {
+    opacity: 20%;
+  }
+}
+
+@keyframes braten2 {
+  from {
+    opacity: 80%;
+  }
+}
+
+@keyframes verbrannt {
+    to {
+        opacity: 100%;
+    }
+}
