@@ -93,7 +93,7 @@ body {
    
 }
 
-body.click {
+body {
 
 overflow-x: hidden;
 overflow-y: auto;
@@ -106,7 +106,7 @@ overflow-y: auto;
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 45vh;
+    margin-top: 44vh;
     width: 14vw;
     height: 10vw;
     background-color: beige;
@@ -126,7 +126,7 @@ overflow-y: auto;
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 45vh;
+    margin-top: 44vh;
     width: 14vw;
     height: 10vw;
     rotate: 0deg;
@@ -139,17 +139,16 @@ overflow-y: auto;
 
 .pfannehinten {
     position: absolute;
-    bottom: 0;
+    bottom: -50vh;
     top: 0;
     right: 0;
     left: 0;
     margin: auto;
-    margin-top: 100vh;
     width: 46.5vw;
     height: 13.5vw;
     background-color: rgb(29, 29, 29);
     opacity: 100%;
-    border-radius: 100% 100% 50% 50%;
+    border-radius: 50%;
     box-shadow: inset -2vw 1vw 2vw rgb(72, 72, 72);
     cursor: all-scroll;
 }
@@ -188,8 +187,8 @@ overflow-y: auto;
 
 .eigelb{
     position: absolute;
-    top: -3.75vw;
-    left: 17.25vw;
+    top: -5vw;
+    left: 0vw;
     width: 10.5vw;
     height: 4.5vw;
     background-color: orange;
@@ -202,35 +201,57 @@ overflow-y: auto;
 .eigelb1{
     position: absolute;
     top: -3.75vw;
-    left: 17.25vw;
-    width: 10.5vw;
-    height: 4.5vw;
+    left: 0vw;
+    width: 0vw;
+    height: 0vw;
     background-color: rgb(20, 18, 14);
     opacity: 0%;
-    border-radius: 50% 50% 40% 40%;
+    border-radius: 50%;
     box-shadow: inset -0.5vw -0.5vw 1vw rgb(0, 0, 0);
     transition: 500ms;
 }
 
 .pfannenboden {
     position: absolute;
-    bottom: -3.75vw;
+    top: 4.3vw;
     left: 0.75vw;
     width: 45vw;
-    height: 13.5vw;
+    height: 7vw;
+    background-color: grey;
+    border-radius: 50%;
+    --c:54;
+    clip-path: ellipse(calc(var(--c)*1%) 100% at top);
+    box-shadow: inset 2vw 1vw 2vw rgb(63, 63, 63);
+}
+
+.pfannenboden1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top:0vw;
+    margin: auto;
+    width: 44vw;
+    height: 0vw;
     background-color: grey;
     border-radius: 50%;
     box-shadow: inset 2vw 1vw 2vw rgb(63, 63, 63);
+    transition: 5s;
 }
 
 .pfannenbodenschatten {
     position: absolute;
-    bottom: -2.25vw;
-    left: -2.25vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 46vw;
     height: 13.5vw;
     border-radius: 50%;
     box-shadow: 5vw 4vw 2vw rgba(0, 0, 0, 0.315);
+    transition: 10s;
 }
 
 .pfannevorne {
@@ -243,8 +264,12 @@ overflow-y: auto;
     --c: 60;
     mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))),#0000 calc(100% - 1px),#000);
     clip-path: ellipse(calc(var(--c)*1%) 100% at top);
-    border-radius: 0% 0% 150% 150%;
+    border-radius: 0% 0% 50% 50%;
     box-shadow: inset -25vw -2vw 5vw rgb(29, 29, 29);
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
 }
 
 .griff {
@@ -271,9 +296,9 @@ overflow-y: auto;
     left: 0;
     margin: auto;
     margin-bottom: 3.1vw;
-    margin-left: 44vw;
+    margin-left: 40vw;
     height: 3.75vw;
-    width: 22vw;
+    width: 28vw;
     border-radius: 0% 30% 30% 0%;
     box-shadow: 2vw 2vw 1vw rgba(0, 0, 0, 0.315);
 }
@@ -281,7 +306,7 @@ overflow-y: auto;
 .bg {
     position: absolute;
     width: 100vw;
-    height: 155vh;
+    height: 150vh;
     background-color: rgb(195, 212, 238);
 }
 
@@ -327,6 +352,8 @@ overflow-y: auto;
 
 }
 body.scroll-ende {
+    
+
     .eiweiß {
     top: 0vw;
     bottom: 0vw;
@@ -335,7 +362,7 @@ body.scroll-ende {
     margin-left: 3.75vw;
     margin:auto;
     width: 37.5vw;
-    height: 12vw;
+    height: 10vw;
     background-color: rgb(207, 200, 192);
     opacity: 100%;
     border-radius: 50%;
@@ -343,6 +370,7 @@ body.scroll-ende {
     animation-name: braten;
     animation-duration: 10s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     }
     .eiweiß1 {
     top: 0vw;
@@ -352,7 +380,7 @@ body.scroll-ende {
     margin-left: 3.75vw;
     margin:auto;
     width: 37.5vw;
-    height: 12vw;
+    height: 37.5vw;
     opacity: 0%;
     border-radius: 50%;
     animation-name: verbrannt;
@@ -363,15 +391,27 @@ body.scroll-ende {
     }
     .eigelb {
         opacity: 80%;
-        top: 2.25vw;
+        top: 0vw;
+    bottom: 0vw;
+    left: 0vw;
+    right: 0vw;
+    margin:auto;
         animation-name: braten2;
         animation-duration: 10s;
         animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
 
     .eigelb1 {
         opacity: 0%;
-        top: 2.25vw;
+        top: 0vw;
+    bottom: 0vw;
+    left: 0vw;
+    right: 0vw;
+    margin-left: 3.75vw;
+    margin:auto;
+        width: 10.5vw;
+        height: 10.5vw;
         animation-name: verbrannt;
         animation-duration: 10s;
         animation-delay: 10s;
@@ -383,13 +423,68 @@ body.scroll-ende {
     }
     .ei {
         opacity: 0%;
-        
+    }
+
+    .pfannenboden {
+        animation-name: perspective1;
+        animation-fill-mode: forwards;
+        animation-duration: 10s;
+    }
+
+    .pfannenbodenschatten {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 45vw;
+        animation-name: perspective1;
+        animation-fill-mode: forwards;
+        animation-duration: 10s;
 }
+
+    .pfannenboden1 {
+    width: 44vw;
+    height: 0vw;
+    margin-top: 7vw; 
+    animation-name: perspective4;
+    animation-fill-mode: forwards;
+    animation-duration: 10s;
+    
+}
+
+    .pfannehinten {
+        animation-name: perspective2;
+        animation-fill-mode: forwards;
+        animation-duration: 10s;
+    }
+
+    .pfannevorne {
+        animation-name: perspective3;
+        animation-fill-mode: forwards;
+        animation-duration: 10s;
+    }
+
+    .griff {
+        animation-name: perspective5;
+        animation-fill-mode: forwards;
+        animation-duration: 10s;
+    }
+
+    .griffschatten {
+        animation-name: perspective6;
+        animation-fill-mode: forwards;
+        animation-duration: 10s;
+    }
+        
 }
 
 @keyframes braten {
   from {
     opacity: 20%;
+  }
+  to {
+    height: 37.5vw;
   }
 }
 
@@ -397,10 +492,72 @@ body.scroll-ende {
   from {
     opacity: 80%;
   }
+  to {
+    height: 10.5vw;
+    border-radius: 50%;
+  }
 }
 
 @keyframes verbrannt {
     to {
         opacity: 100%;
+    }
+}
+
+@keyframes perspective1 {
+    to {
+        height: 45vw;
+        top: 0.75vw;
+        left: 0.75vw;
+        margin: auto;
+        clip-path: ellipse(calc(var(--c)*1%) 100% at bottom);
+    }
+}
+
+@keyframes perspective2 {
+    to {
+        height: 46.5vw;
+        border-radius: 50%;
+    }
+}
+
+@keyframes perspective3 {
+    to {
+        bottom: 2.75vw;
+        left: 0.75vw;
+        height: 40vw;
+        width: 45vw;
+        border-radius: 150%;
+        --c: 60;
+        mask: radial-gradient(calc(var(--c)*1%) 100% at 50% calc(-100%*cos(asin(50/var(--c)))),#0000 calc(100% - 1px),#000);
+        clip-path: ellipse(calc(var(--c)*1%) 100% at top);
+    }
+}
+
+@keyframes perspective4 {
+    to {
+        top: 0vw;
+        left: 0vw;
+        width: 45vw;
+        height: 45vw;
+        margin-top: 0.75vw;
+    }
+}
+
+@keyframes perspective5 {
+    to {
+        margin-bottom: 20vw;
+        height: 5vw;
+        width: 23vw;
+        margin-left: 45.5vw;
+    }
+}
+
+@keyframes perspective6 {
+    to {
+        margin-bottom: 20vw;
+        height: 5vw;
+        width: 28vw;
+        box-shadow: 3vw 3vw 1vw rgba(0, 0, 0, 0.315);
     }
 }
