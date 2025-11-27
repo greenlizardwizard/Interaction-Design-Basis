@@ -93,7 +93,7 @@ body {
    
 }
 
-body {
+body.click {
 
 overflow-x: hidden;
 overflow-y: auto;
