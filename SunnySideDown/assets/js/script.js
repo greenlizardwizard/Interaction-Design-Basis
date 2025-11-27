@@ -1,16 +1,24 @@
+let clicked = false
 
 window.addEventListener('click', () => {
 
     onclick = document.body.classList.add('click')
     audio3.play();
 
+    clicked = true
+
 })
+
 
 
 
 /* Dieser Code wird während des Scrollens ausgeführt
    also immer dann, wenn min 1px nach unten oder oben gescrollt wird */
 window.addEventListener('scroll', () => {
+
+    if (!clicked) {
+        return
+    }
 
     // hier wird berechnet, ob das Ende der Seite erreicht wurde
     const hasReachedEnd = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight;
